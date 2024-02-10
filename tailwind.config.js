@@ -10,14 +10,21 @@ export default {
       'dark-600': '#2E2E2E',
       'dark-500': '#414141',
       gray: '#777777',
-      'bg-main': '#FFFFFF',
+      light: '#FFFFFF',
     },
     fontFamily: {},
     extend: {
+      width: {
+        70: '17.5rem',
+      },
       spacing: {
         13: '3.25rem',
         66: '16.5rem',
         68: '17rem',
+        84: '21rem',
+        86: '21.5rem',
+        87: '21.75rem',
+        88: '22rem',
         '8xl': '96rem',
         '9xl': '128rem',
       },

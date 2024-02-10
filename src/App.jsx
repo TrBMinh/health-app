@@ -1,7 +1,6 @@
-import ErrorPage from './ErrorPage';
-import Footer from './components/layout/Footer';
-import Header from './components/layout/Header';
+import ErrorPage from './pages/ErrorPage';
 import MyPage from './pages/MyPage';
+import Layout from './components/layout/Layout';
 import {
   createBrowserRouter,
   Navigate,
@@ -10,25 +9,18 @@ import {
 
 const router = createBrowserRouter([
   {
-    path: '/',
-    element: <MyPage />,
+    element: <Layout />,
     errorElement: <ErrorPage />,
-    children: [],
+    children: [{ path: 'my-page', element: <MyPage />, index: true }],
   },
   {
     path: '*',
-    element: <Navigate to="/" />,
+    element: <Navigate to="my-page" />,
   },
 ]);
 
 function App() {
-  return (
-    <>
-      <Header />
-      <RouterProvider router={router} fallbackElement={<p>Loading...</p>} />
-      <Footer />
-    </>
-  );
+  return <RouterProvider router={router} fallbackElement={<p>Loading...</p>} />;
 }
 
 export default App;
