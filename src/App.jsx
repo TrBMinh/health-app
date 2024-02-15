@@ -1,6 +1,6 @@
 import ErrorPage from './pages/ErrorPage';
 import MyPage from './pages/MyPage';
-import Layout from './components/layout/Layout';
+import Layout from './layouts/Layout';
 import {
   createBrowserRouter,
   Navigate,

@@ -21,6 +21,7 @@ export default {
         13: '3.25rem',
         66: '16.5rem',
         68: '17rem',
+        78: '19.5rem',
         84: '21rem',
         86: '21.5rem',
         87: '21.75rem',
@@ -33,6 +34,11 @@ export default {
       },
       borderRadius: {
         '4xl': '2rem',
+      },
+      backgroundImage: {
+        dinner1: "url('/public/img/dinner-1.jpg')",
+        'hero-pattern':
+          "linear-gradient(rgba(255, 204, 33, 0.2), rgba(255, 150, 60, 0.2)), url('/public/img/dinner-1.jpg')",
       },
     },
   },

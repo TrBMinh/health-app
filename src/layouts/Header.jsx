@@ -4,7 +4,7 @@ import NavigationCol from './NavigationCol';
 import IconMemo from '/src/assets/icons/navbar/memo.svg?react';
 import IconChallenge from '/src/assets/icons/navbar/challenge.svg?react';
 import IconInfo from '/src/assets/icons/navbar/info.svg?react';
-import BtnMenu from '../ui/BtnMenu';
+import BtnMenu from '../components/buttons/BtnMenu';
 import { useCallback, useState } from 'react';
 
 const rowMenuItems = [

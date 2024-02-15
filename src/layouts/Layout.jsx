@@ -1,13 +1,15 @@
 import Header from './Header';
 import Footer from './Footer';
 import { Outlet } from 'react-router-dom';
-import BtnGoTop from '../ui/BtnGoTop';
+import BtnGoTop from '../components/buttons/BtnGoTop';
 
 function Layout() {
   return (
     <>
       <Header />
-      <Outlet />
+      <main>
+        <Outlet />
+      </main>
       <Footer />
       <BtnGoTop />
     </>
