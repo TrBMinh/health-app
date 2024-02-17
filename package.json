@@ -13,6 +13,7 @@
     "@emotion/react": "^11.11.3",
     "@emotion/styled": "^11.11.0",
     "@mui/joy": "^5.0.0-beta.27",
+    "@mui/x-charts": "^6.19.4",
     "classnames": "^2.5.1",
     "localforage": "^1.10.0",
     "match-sorter": "^6.3.4",

@@ -1,4 +1,4 @@
-import { Box, CircularProgress, Typography } from '@mui/joy';
+import { Box, CircularProgress } from '@mui/joy';
 import classNames from 'classnames';
 import PropTypes from 'prop-types';
 
@@ -22,7 +22,14 @@ function PercentComplete({ className }) {
         variant="plain"
         style={{ color: 'yellow' }}
       >
-        <Typography>75%</Typography>
+        <div className="flex items-end gap-1">
+          <p className="text-lg text-light [text-shadow:_0_2px_4px_rgba(252_165_0_/_80%)]">
+            05/21
+          </p>
+          <p className="text-2xl text-light [text-shadow:_0_2px_4px_rgba(252_165_0_/_80%)]">
+            75%
+          </p>
+        </div>
       </CircularProgress>
     </Box>
   );
